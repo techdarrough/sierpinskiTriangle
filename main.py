@@ -12,7 +12,7 @@ def drawTriangle(points, color, myTurtle):
   myTurtle.end_fill()
 
 def findMiddle(a,b):
-  return ((a[0] + b[0] /2, a[1] + b[1] /2))
+  return ((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
 
 def sierpinski(points, deg, myTurtle):
   colormap = ['blue', 'red', 'green', 'white', 'yellow', 'violet', 'orange']
@@ -22,7 +22,7 @@ def sierpinski(points, deg, myTurtle):
                findMiddle(points[0], points[1]),
                findMiddle(points[0], points[2])],
               deg-1, myTurtle)
-    sierpinski([points[2],
+    sierpinski([points[1],
                findMiddle(points[0], points[1]),
                findMiddle(points[1], points[2])],
               deg-1, myTurtle)
