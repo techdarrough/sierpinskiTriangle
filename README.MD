@@ -1,0 +1,1 @@
+drawing Sierpinskies' Triangle using python turtle graphics
